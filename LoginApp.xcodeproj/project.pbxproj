@@ -13,6 +13,7 @@
 		B774EEA129090F010091D41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B774EE9F29090F010091D41A /* Main.storyboard */; };
 		B774EEA329090F030091D41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B774EEA229090F030091D41A /* Assets.xcassets */; };
 		B774EEA629090F030091D41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B774EEA429090F030091D41A /* LaunchScreen.storyboard */; };
+		B774EEAE2909126B0091D41A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774EEAD2909126B0091D41A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B774EEA229090F030091D41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B774EEA529090F030091D41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B774EEA729090F030091D41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B774EEAD2909126B0091D41A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B774EEA229090F030091D41A /* Assets.xcassets */,
 				B774EEA429090F030091D41A /* LaunchScreen.storyboard */,
 				B774EEA729090F030091D41A /* Info.plist */,
+				B774EEAD2909126B0091D41A /* LoginViewController.swift */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B774EEAE2909126B0091D41A /* LoginViewController.swift in Sources */,
 				B774EE9E29090F010091D41A /* ViewController.swift in Sources */,
 				B774EE9A29090F010091D41A /* AppDelegate.swift in Sources */,
 				B774EE9C29090F010091D41A /* SceneDelegate.swift in Sources */,

@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45l-bv-SLu" userLabel="View Principal">
+                                <rect key="frame" x="32" y="263" width="350" height="380.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN COM SUA CONTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-gG-TW9" userLabel="Label Titulo">
+                                        <rect key="frame" x="32" y="32" width="286" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amw-fr-rAL" userLabel="Text Field Email">
+                                        <rect key="frame" x="32" y="85.5" width="286" height="56"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="j15-0H-LUS"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-WW-70y" userLabel="Text Field Senha">
+                                        <rect key="frame" x="32" y="157.5" width="286" height="56"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="zHX-Ld-IzJ"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-Qx-c73" userLabel="Botao Login">
+                                        <rect key="frame" x="32" y="245.5" width="286" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="vBk-53-nfn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="LOGIN">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="Blue Marguerite"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="botaoLoginPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALH-oZ-Sf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-7G-So8" userLabel="Botao forgotPassword">
+                                        <rect key="frame" x="32" y="317.5" width="286" height="31"/>
+                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Esqueceu a senha?">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="botaoForgotPasswordPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVy-Mw-SI5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pLd-WW-70y" firstAttribute="top" secondItem="amw-fr-rAL" secondAttribute="bottom" constant="16" id="1bX-Jk-ab7"/>
+                                    <constraint firstItem="cYi-gG-TW9" firstAttribute="leading" secondItem="45l-bv-SLu" secondAttribute="leading" constant="32" id="4cX-ZC-pFE"/>
+                                    <constraint firstItem="HC7-Qx-c73" firstAttribute="trailing" secondItem="pLd-WW-70y" secondAttribute="trailing" id="6Cx-Mg-AGM"/>
+                                    <constraint firstItem="ZFF-7G-So8" firstAttribute="top" secondItem="HC7-Qx-c73" secondAttribute="bottom" constant="16" id="8dF-Ux-j0V"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZFF-7G-So8" secondAttribute="bottom" constant="32" id="CTZ-HI-jGu"/>
+                                    <constraint firstItem="amw-fr-rAL" firstAttribute="top" secondItem="cYi-gG-TW9" secondAttribute="bottom" constant="32" id="DZ2-GR-c1m"/>
+                                    <constraint firstItem="ZFF-7G-So8" firstAttribute="leading" secondItem="45l-bv-SLu" secondAttribute="leading" constant="32" id="Di5-Jn-fPU"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYi-gG-TW9" secondAttribute="trailing" constant="32" id="GWq-O7-r4e"/>
+                                    <constraint firstItem="HC7-Qx-c73" firstAttribute="top" secondItem="pLd-WW-70y" secondAttribute="bottom" constant="32" id="JJK-G8-2d1"/>
+                                    <constraint firstItem="cYi-gG-TW9" firstAttribute="top" secondItem="45l-bv-SLu" secondAttribute="top" constant="32" id="eaj-w9-wn9"/>
+                                    <constraint firstItem="pLd-WW-70y" firstAttribute="trailing" secondItem="amw-fr-rAL" secondAttribute="trailing" id="f3l-dN-myK"/>
+                                    <constraint firstItem="amw-fr-rAL" firstAttribute="leading" secondItem="cYi-gG-TW9" secondAttribute="leading" id="k04-y2-XPD"/>
+                                    <constraint firstItem="HC7-Qx-c73" firstAttribute="leading" secondItem="pLd-WW-70y" secondAttribute="leading" id="kLa-2X-Vjp"/>
+                                    <constraint firstItem="amw-fr-rAL" firstAttribute="trailing" secondItem="cYi-gG-TW9" secondAttribute="trailing" id="kci-Hs-QW3"/>
+                                    <constraint firstItem="pLd-WW-70y" firstAttribute="leading" secondItem="amw-fr-rAL" secondAttribute="leading" id="ogU-Mh-RkU"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZFF-7G-So8" secondAttribute="trailing" constant="32" id="yfr-cO-Acw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Blue Marguerite"/>
+                        <constraints>
+                            <constraint firstItem="45l-bv-SLu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="IuN-ck-np1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="45l-bv-SLu" secondAttribute="trailing" constant="32" id="fwy-fI-zuv"/>
+                            <constraint firstItem="45l-bv-SLu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="x1D-5h-p5g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="amw-fr-rAL" id="sVr-mA-3K9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="45" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Blue Marguerite">
+            <color red="0.40392156862745099" green="0.396078431372549" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
